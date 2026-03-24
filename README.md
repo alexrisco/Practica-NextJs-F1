@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mi Práctica de F1 - Next.js (Temporada 2026)
 
-## Getting Started
+Soy Álex Risco y este es el proyecto que he desarrollado para mi práctica de Next.js. He decidido enfocarlo en la Fórmula 1 de 2026 aprovechando el cambio de reglamento y los nuevos fichajes que ya conocemos, como Carlos Sainz en Williams o Lewis Hamilton en Ferrari.
 
-First, run the development server:
+El objetivo principal ha sido aplicar los conceptos explicados por Midudev, centrando el trabajo en el rendimiento y en que la interfaz sea intuitiva y rápida.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Tecnologías utilizadas
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Para el desarrollo he seleccionado herramientas actuales que permiten un flujo de trabajo profesional:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+* Next.js 15: Utilizando el App Router para gestionar las rutas de forma eficiente.
+* Tailwind CSS: Para todo el diseño visual. He apostado por una estética oscura que encaja con la imagen de la competición.
+* React Hooks (useState): Fundamental para la lógica del calendario interactivo y el manejo de estados en el frontend.
+* Optimización de recursos: He usado el componente Image de Next.js para asegurar que las fotos carguen rápido y no afecten a la experiencia de usuario.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Estructura de la web
 
-## Learn More
+La aplicación cuenta con cinco secciones principales:
 
-To learn more about Next.js, take a look at the following resources:
+1. Inicio: Una landing page con un diseño visual potente y tipografía clara.
+2. Pilotos: Galería con la parrilla confirmada para 2026 y efectos visuales al pasar el ratón.
+3. Escuderías: Información sobre los equipos y los nuevos motoristas que entran en la categoría.
+4. Calendario Interactivo: Una lista de grandes premios donde el usuario puede gestionar el estado de cada carrera.
+5. Contacto: Un formulario directo para enviar mensajes o consultas.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Organización del código
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+* /app: Contiene toda la lógica de las páginas y el enrutado.
+* /public/pilotos: Directorio donde se almacenan las imágenes de los pilotos para su correcta carga.
+* layout.tsx: Aquí he configurado el menú de navegación superior de forma fija (sticky) para facilitar el movimiento entre secciones.
+* next.config.ts: Configuración necesaria para permitir la carga de imágenes desde servidores externos de forma segura.
 
-## Deploy on Vercel
+## Instalación en local
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Si quieres ejecutar el proyecto en tu ordenador, sigue estos pasos:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Clona el repositorio: git clone https://github.com/alexrisco/Practica-NextJs-F1.git
+2. Instala las dependencias: npm install
+3. Inicia el proyecto: npm run dev
+4. Abre el navegador en: localhost:3000
+
+---
+Proyecto realizado por Álex Risco. Enfocado en el aprendizaje de Next.js y el desarrollo frontend moderno.
